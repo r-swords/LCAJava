@@ -3,6 +3,7 @@ public class BinaryTree {
     boolean n1Present;
     boolean n2Present;
 
+    // Returns the Node that contains LCA if both numbers are in the tree, otherwise null
     public Node findLca(int number1, int number2) {
         n1Present = false;
         n2Present = false;
@@ -11,6 +12,7 @@ public class BinaryTree {
         else return result;
     }
 
+    // Finds the Node that contains the LCA
     private Node findLca(int number1, int number2, Node node) {
         if(node == null) {
             return null;
